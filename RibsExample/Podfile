@@ -1,0 +1,46 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '12.0'
+
+target 'RibsExample' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  inhibit_all_warnings!
+  
+  # Pods for RibsExample
+  
+  # UI
+  pod 'SnapKit'
+  
+  # Architecture
+  pod 'RIBs', git: 'https://github.com/uber/RIBs.git', branch: 'master', submodules: true
+  pod 'ReactorKit'
+  
+  
+  # DI
+  pod 'Swinject'
+  
+  # Networking
+  
+  pod 'Moya/RxSwift'
+  
+  pod 'Kingfisher'
+  pod 'netfox'
+  
+  # Rx
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxDataSources'
+  pod 'RxOptional'
+  pod 'RxViewController'
+  pod 'RxKeyboard'
+  pod 'RxSwiftExt'
+  
+  
+  # Misc.
+  pod 'Then'
+  pod 'CocoaLumberjack/Swift'
+  pod 'ObjectMapper'
+  pod 'ReusableKit'
+  pod 'URLNavigator'
+  
+end
